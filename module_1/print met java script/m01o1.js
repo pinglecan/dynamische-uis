@@ -5,6 +5,9 @@ alert(uitleg);
 let gewenste_aantal_autos = prompt("Hoeveel autos wilt u kwijt in de parkeergarage?");
 // Berekenen hier het aantal verdiepingen
 
+
+document.getElementById("berekening").innerHTML = Math.ceil((gewenste_aantal_autos - 80) / 120);
+
 let antwoord = "Ik heb nog geen idee hoeveel verdiepingen er moeten komen :-( ";
 document.getElementById("antwoord").innerText = antwoord;
 
