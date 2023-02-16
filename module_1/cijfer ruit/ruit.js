@@ -12,4 +12,14 @@ for(let i = 0; i< alert; i++) {
     document.write("<br>")
 }
 
-
+for(i = alert; i > 0; i--) {
+    for(let z = 1; z < i; z++){
+        if(z < i+1){
+            document.write(z+ "-") 
+        } else{
+            document.write(z)
+        }
+    }
+    
+    document.write("<br>")
+}
