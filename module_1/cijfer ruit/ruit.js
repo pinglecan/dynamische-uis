@@ -1,25 +1,29 @@
 let alert = prompt("geef een getal: ")
 
-const listnum = []
-
-
-
+let getal = 0
 
 for(let i = 0; i< alert; i++) {
     for(let z = 0; z < i+1; z++){
-        document.write(z+ 1 + "-" )
+        if(z == getal){
+            document.write(z + 1)
+        }
+        else{
+            document.write(z+ 1 + "-" )
+        }
+        
     }
+    getal+= 1
     document.write("<br>")
 }
-
+getal = 19
 for(i = alert; i > 0; i--) {
     for(let z = 1; z < i; z++){
-        if(z < i+1){
-            document.write(z+ "-") 
+        if(z == getal){
+            document.write(z) 
         } else{
-            document.write(z)
+            document.write(z + "-")
         }
     }
-    
+    getal-=1
     document.write("<br>")
 }
