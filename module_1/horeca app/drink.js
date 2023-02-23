@@ -1,11 +1,15 @@
+bestellen = "real"
+
 while (bestellen != 'stop') {
 
-let bestellen = promt("Wat wilt u bestellen")
+    bestellen = prompt ("Wat wilt u bestellen")
 
-    if(bestellen == "fris" || "bier" || "wijn"){
+    if (bestellen == "fris" || "bier" || "wijn"){
 
-        let hoeveel = promt("Hoeveel" + {bestellen} + " wilt u bestellen")
-
+        let hoeveel = prompt ("Hoeveel wilt u bestellen")
+    
+    } else if{
+        
     }
 
 }
