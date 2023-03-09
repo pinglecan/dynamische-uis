@@ -19,11 +19,11 @@ while (bestellen != 'stop') {
 
 console.dir(drinken)
 
-let prijs_wijn = bestellen[wijn] * 5    
-let prijs_bier = bestellen[bier] * 3
-let prijs_fris = bestellen[fris] * 2
+let prijs_wijn = drinken['wijn'] * 5    
+let prijs_bier = drinken[' bier'] * 3
+let prijs_fris = drinken['bier'] * 2
 
-let kosten = prijs_bier + "" + prijs_fris + "" + prijs_wijn
+let kosten = [prijs_bier + "" + prijs_fris + "" + prijs_wijn]
 
 
 const itemsFormatted = JSON.stringify(drinken, null, " ");
