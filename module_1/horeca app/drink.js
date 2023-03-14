@@ -1,6 +1,5 @@
 let bestellen = "real"
 let hoeveel = 0 
-//prijs van de producten    fris = 2 bier = 3 wijn = 5
 const drinken = {wijn:0, bier:0, fris:0}
 
 while (bestellen != 'stop') {
@@ -17,16 +16,37 @@ while (bestellen != 'stop') {
     }
 }
 
+
+ 
+
 console.dir(drinken)
 
 let prijs_wijn = drinken['wijn'] * 5    
-let prijs_bier = drinken[' bier'] * 3
-let prijs_fris = drinken['bier'] * 2
+let prijs_bier = drinken['bier'] * 3
+let prijs_fris = drinken['fris'] * 2
 
-let kosten = [prijs_bier + "" + prijs_fris + "" + prijs_wijn]
 
+if(drinken['wijn'] ==0){
+    delete drinken.wijn
+    delete prijs_wijn
+}else if(drinken['bier']== 0){
+    delete drinken.bier
+    delete prijs_bier
+}else if(drinken['fris'] == 0){
+    delete drinken.fris
+    delete prijs_fris
+}else{
+    console.log('didnt delete anything')
+}
+
+
+console.dir(prijs_wijn)
+
+let totaal = " totaal prijs is:€" + (prijs_bier + prijs_fris + prijs_wijn)
 
 const itemsFormatted = JSON.stringify(drinken, null, " ");
-console.dir(itemsFormatted)
+
+console.dir(kosten)
+
 document.getElementById("myDiv").innerHTML = itemsFormatted;
-document.getElementById("kosten").innerHTML = kosten;
+document.getElementById("kosten").innerHTML = totaal;
