@@ -1,6 +1,9 @@
 let bestellen = "real"
 let hoeveel = 0 
+let itemsFormatted ="<br>"
 const drinken = {wijn:0, bier:0, fris:0}
+
+
 
 while (bestellen != 'stop') {
 
@@ -38,15 +41,19 @@ if(drinken['wijn'] ==0){
 }else{
     console.log('didnt delete anything')
 }
+test = Object.keys(drinken)
 
-
-console.dir(prijs_wijn)
+for (const [key, value] of Object.entries(drinken)) {
+   let itemsFormatted = `${value} x ${key} <br>`
+}
 
 let totaal = " totaal prijs is:€" + (prijs_bier + prijs_fris + prijs_wijn)
 
-const itemsFormatted = JSON.stringify(drinken, null, " ");
+
 
 console.dir(kosten)
+
+console.log(test)
 
 document.getElementById("myDiv").innerHTML = itemsFormatted;
 document.getElementById("kosten").innerHTML = totaal;
