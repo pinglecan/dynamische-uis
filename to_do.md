@@ -1,2 +1,2 @@
 #vandaag te doen
-maak de bon mooier
+horeca app afmaken en cjv als die klaar is
