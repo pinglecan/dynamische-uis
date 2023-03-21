@@ -46,8 +46,8 @@ test = Object.keys(drinken)
 
 for (const [key, value] of Object.entries(drinken)) {
     itemsFormatted += `${value} x ${key} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`
-    if(key == 'wijn'){
-        itemsFormatted += `prijs: €${prijs_wijn}<br>`
+    if (key == 'wijn'){
+        itemsFormatted += `prijs: €${prijs_wijn}<br>` 
         
     }
     else if(key == 'bier'){
