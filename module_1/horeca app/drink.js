@@ -32,20 +32,14 @@ let prijs_fris = drinken['fris'] * 2
 if(drinken['wijn'] ==0){
     delete drinken.wijn
     delete prijs_wijn
-}else{
-
 }
 if(drinken['bier']== 0){
     delete drinken.bier
     delete prijs_bier
-}else{
-
 }
 if(drinken['fris'] == 0){
     delete drinken.fris 
     delete prijs_fris
-}else{
-    
 }
         
 test = Object.keys(drinken)
@@ -53,14 +47,14 @@ test = Object.keys(drinken)
 for (const [key, value] of Object.entries(drinken)) {
     itemsFormatted += `${value} x ${key} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`
     if(key == 'wijn'){
-        itemsFormatted += `prijs: ${prijs_wijn}<br>`
+        itemsFormatted += `prijs: €${prijs_wijn}<br>`
         
     }
     else if(key == 'bier'){
-        itemsFormatted += `prijs: ${prijs_bier}<br>`
+        itemsFormatted += `prijs: €${prijs_bier}<br>`
     }
     else if(key == 'fris'){
-        itemsFormatted += `prijs ${prijs_fris}<br>`
+        itemsFormatted += `prijs: €${prijs_fris}<br>`
     }else{
         console.log('klaar')
     }
