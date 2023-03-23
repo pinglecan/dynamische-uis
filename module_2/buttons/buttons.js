@@ -21,4 +21,3 @@ function changeImage(nummers){
     console.dir(knop2)
     console.dir(knop3)
 }
-
