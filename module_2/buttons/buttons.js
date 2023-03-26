@@ -5,6 +5,6 @@ function changeImage(nummers){
     plaatje = document.getElementById('plaatje')
     plaatje.src = "images/"+nummers+".jpg"
     button.innerHTML = parseInt(button.innerHTML) + 1
-
+    
     button.disabled = true  
 }
