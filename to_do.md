@@ -1,2 +1,2 @@
 #vandaag te doen
-de java script van button 1.0 afmaken
+de java script van button 2.0 afmaken
