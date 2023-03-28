@@ -9,6 +9,8 @@ function changeImage(nummers){
     for(let i = 1; i !=4; i++){
         console.log(i)
         document.getElementById('button' + i ).disabled = false;
+        document.getElementById('button' + i ).style.backgroundColor = "green"
     }
     button.disabled = true;
+    button.style.backgroundColor = "red"
 }
