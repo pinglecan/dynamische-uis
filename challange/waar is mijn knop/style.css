@@ -1,0 +1,16 @@
+body {
+    padding: 20px;
+  }
+  button {
+    font-weight: bold;
+    background: blue;
+    border: none;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-family: 'top secret stamp';
+  }
+  button:hover {
+    background: red;
+    text-decoration: underline;
+  }
