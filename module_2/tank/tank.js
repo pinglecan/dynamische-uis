@@ -16,6 +16,8 @@ function checkKey(e) {
     	console.log("left arrow");
     } else if (e.keyCode == '39') {   // right arrow
     	console.log("right arrow");
-    	image.style.backgroundPosition = `164px 0px`; // check goed de rupsband
+        while(1==1){
+    	    image.style.backgroundPosition = `164px 0px`; // check goed de rupsband
+        }
     }
 }
