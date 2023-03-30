@@ -60,6 +60,7 @@ let cars = [
     "Volkswagen Passat"
     ];
 
+    cars.sort()
 
     for (x in cars) {
         if (cars[x].includes('Ferrari')) {
