@@ -1,4 +1,4 @@
-const colors = ['red','purple','orange']
+const colors = ['red','purple','orange','pink',]
 
 function changeCol (button){
     let buttoncolor = button.style.backgroundColor

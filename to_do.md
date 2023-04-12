@@ -1,2 +1,2 @@
 #vandaag te doen
-verder aan de tank
+beginnen met de stem computer
