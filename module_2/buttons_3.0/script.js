@@ -22,8 +22,3 @@ for(let x = 1; x <30 + 1 ; x++){
     button.setAttribute('onClick','changeCol(this)')
     document.body.appendChild(button)
 }
-
-      
-
-
-
