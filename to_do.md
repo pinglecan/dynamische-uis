@@ -1,2 +1,2 @@
 #vandaag te doen
-beginnen met de stem computer
+veder met de stem computer
