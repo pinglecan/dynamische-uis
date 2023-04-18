@@ -1,2 +1,2 @@
 #vandaag te doen
-veder met de stem computer
+verder met sword art offline game 
