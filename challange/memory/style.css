@@ -1,0 +1,11 @@
+img{
+    width: 120px;
+    height: 124px   ;
+    border-radius: 30px;
+
+}
+
+
+#image_1_row_1{
+    background-image: url(img/background.png);
+}
