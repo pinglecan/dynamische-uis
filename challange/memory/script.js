@@ -20,12 +20,26 @@ function turn_image(img){
     let name = img.id.replace("_row_", "")
     console.log(name.replace(/.$/,""))
     img.src = 'img/' + name.replace(/.$/,"") + '.webp'
+    names.push(name.replace(/.$/,""))
+    if (names.length === 2){
+      img_checker(names)
+      names = []
+    }
+
 }
+
+function img_checker(list){
+  if( list[0] === list[1]){
+    console.log()
+  }
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////
 
 const Images = ["aiko","Audrey","Beli","Celeste","Jessie","Kyanna","kyu","Lola","Momo","Nikki","Tiffany","Venus"];
-
+let names = [];
 
 
 for (let x = 1; x < 3; x++){
@@ -42,8 +56,3 @@ for (let x = 1; x < 3; x++){
     }
 
 }
-
-
-
-
-//img/' + Images[i] + '.webp
