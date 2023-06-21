@@ -12,7 +12,7 @@ button.addEventListener ("click", function() {
     document.getElementById('welkom').innerHTML = 'welkom ' + jouwnaam
     teller += 1
     if(teller == 2){
-        console.log('ball aidss')
+        console.log('ballz')
         button.remove()
     }
 });     
